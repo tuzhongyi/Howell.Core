@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F47C7337-0629-4EBF-89DB-C68BD5D23805}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Howell</RootNamespace>
+    <AssemblyName>Howell.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\Publish\Howell.Core.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\Publish\Howell.Core.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BinaryString.cs" />
+    <Compile Include="Capability\BooleanCap.cs" />
+    <Compile Include="Capability\Capabilities.cs" />
+    <Compile Include="Capability\Constants.cs" />
+    <Compile Include="Capability\DateTimeCap.cs" />
+    <Compile Include="Capability\EnumInt32.cs" />
+    <Compile Include="Capability\EnumString.cs" />
+    <Compile Include="Capability\FloatCap.cs" />
+    <Compile Include="Capability\Int32Cap.cs" />
+    <Compile Include="Capability\Int64Cap.cs" />
+    <Compile Include="Capability\PhysAddressCap.cs" />
+    <Compile Include="Capability\PercentageCap.cs" />
+    <Compile Include="Capability\StringCap.cs" />
+    <Compile Include="Capability\TimeCap.cs" />
+    <Compile Include="Capability\TimeSpan.cs" />
+    <Compile Include="Collections\Generic\SynchronizedCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\Generic\SynchronizedDictionary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComponentModel\AsyncActionEventBased.cs" />
+    <Compile Include="ComponentModel\AsyncOperationEventBasedSkeleton.cs" />
+    <Compile Include="ComponentModel\AsyncFunctionEventBased.cs" />
+    <Compile Include="CommonStrings.cs" />
+    <Compile Include="ComponentModel\AsyncProgressiveActionEventBased.cs" />
+    <Compile Include="ComponentModel\AsyncProgressiveFunctionEventBased.cs" />
+    <Compile Include="ComponentModel\AsyncProgressiveOperationEventBasedSkeleton.cs" />
+    <Compile Include="ComponentModel\AsyncProgressiveReferenceActionEventBased.cs" />
+    <Compile Include="ComponentModel\AsyncProgressiveReferenceFunctionEventBased.cs" />
+    <Compile Include="Conditions\AlternativeExceptionCondition.cs" />
+    <Compile Include="Conditions\AlternativeExceptionHelper.cs" />
+    <Compile Include="Conditions\CollectionHelpers.cs" />
+    <Compile Include="Conditions\Condition.cs" />
+    <Compile Include="Conditions\ConditionValidator.cs" />
+    <Compile Include="Conditions\ConstraintViolationType.cs" />
+    <Compile Include="Conditions\DefaultComparer.cs" />
+    <Compile Include="Conditions\EnsuresValidator.cs" />
+    <Compile Include="Conditions\PostconditionException.cs" />
+    <Compile Include="Conditions\RequiresValidator.cs" />
+    <Compile Include="Conditions\RequiresWithCustomExceptionValidator.cs" />
+    <Compile Include="Conditions\StringificationExtensions.cs" />
+    <Compile Include="Conditions\Throw.cs" />
+    <Compile Include="Conditions\ValidatorExtensions.Collection.cs" />
+    <Compile Include="Conditions\ValidatorExtensions.Compare.Boolean.cs" />
+    <Compile Include="Conditions\ValidatorExtensions.Compare.Byte.cs" />
+    <Compile Include="Conditions\ValidatorExtensions.Compare.DateTime.cs" />
+    <Compile Include="Conditions\ValidatorExtensions.Compare.Decimal.cs" />
+    <Compile Include="Conditions\ValidatorExtensions.Compare.Double.cs" />
+    <Compile Include="Conditions\ValidatorExtensions.Compare.IComparable.cs" />
+    <Compile Include="Conditions\ValidatorExtensions.Compare.Int16.cs" />
+    <Compile Include="Conditions\ValidatorExtensions.Compare.Int32.cs" />
+    <Compile Include="Conditions\ValidatorExtensions.Compare.Int64.cs" />
+    <Compile Include="Conditions\ValidatorExtensions.Compare.Single.cs" />
+    <Compile Include="Conditions\ValidatorExtensions.cs" />
+    <Compile Include="Conditions\ValidatorExtensions.Evaluation.cs" />
+    <Compile Include="Conditions\ValidatorExtensions.Null.cs" />
+    <Compile Include="Conditions\ValidatorExtensions.String.cs" />
+    <Compile Include="Conditions\ValidatorExtensions.Type.cs" />
+    <Compile Include="Configuration\XmlConfiguration.cs" />
+    <Compile Include="Cryptography\CRC16.cs" />
+    <Compile Include="Cryptography\CRC32.cs" />
+    <Compile Include="Cryptography\DES.cs" />
+    <Compile Include="Cryptography\DESPassword.cs" />
+    <Compile Include="Cryptography\MD5.cs" />
+    <Compile Include="Cryptography\RSA.cs" />
+    <Compile Include="Data\DbDateTime.cs" />
+    <Compile Include="DateTimeString.cs" />
+    <Compile Include="Drawing\D2\PointSetD.cs" />
+    <Compile Include="Drawing\D2\PointSetI.cs" />
+    <Compile Include="EnumString.cs" />
+    <Compile Include="ExceptionEventArgs.cs" />
+    <Compile Include="GB\GB2260.cs" />
+    <Compile Include="Industry\AlarmInProbeType.cs" />
+    <Compile Include="Industry\ArmType.cs" />
+    <Compile Include="Industry\Camera.cs" />
+    <Compile Include="Industry\DeviceAbilities.cs" />
+    <Compile Include="Industry\PTZDirection.cs" />
+    <Compile Include="Industry\PTZLens.cs" />
+    <Compile Include="Industry\PTZPreset.cs" />
+    <Compile Include="Industry\DecodingChannelState.cs" />
+    <Compile Include="Industry\Event.cs" />
+    <Compile Include="Industry\Identity.cs" />
+    <Compile Include="Industry\Network.cs" />
+    <Compile Include="Industry\RecordState.cs" />
+    <Compile Include="Industry\DayNightState.cs" />
+    <Compile Include="Industry\DeviceClassification.cs" />
+    <Compile Include="Industry\IOState.cs" />
+    <Compile Include="Industry\NetworkInputStreamProtocolType.cs" />
+    <Compile Include="Industry\Permission.cs" />
+    <Compile Include="Industry\TeardownReason.cs" />
+    <Compile Include="Industry\ProtocolType.cs" />
+    <Compile Include="Industry\Severity.cs" />
+    <Compile Include="Industry\Storage.cs" />
+    <Compile Include="Industry\TriggeringType.cs" />
+    <Compile Include="Industry\Video.cs" />
+    <Compile Include="Industry\VideoInterfaceType.cs" />
+    <Compile Include="Instance.cs" />
+    <Compile Include="Interops\StructPointer.cs" />
+    <Compile Include="Math\Algorithm\AngleAlgorithm.cs" />
+    <Compile Include="Math\Algorithm\CircleAlgorithm.cs" />
+    <Compile Include="Math\Algorithm\DoubleAlgorithm.cs" />
+    <Compile Include="Math\Algorithm\Geometry2DAlgorithm.cs" />
+    <Compile Include="Math\Algorithm\IGeometryConverter.cs" />
+    <Compile Include="Math\Algorithm\LineAlgorithm.cs" />
+    <Compile Include="Math\Algorithm\Mathematics.cs" />
+    <Compile Include="Math\Algorithm\MinMax.cs" />
+    <Compile Include="Math\Algorithm\PointAlgorithm.cs" />
+    <Compile Include="Math\Algorithm\PolygonAlgorithm.cs" />
+    <Compile Include="Math\Algorithm\PolylineAlgorithm.cs" />
+    <Compile Include="Math\Algorithm\RectangleAlgorithm.cs" />
+    <Compile Include="Math\Algorithm\Stabilizer\CentroidStabilizer.cs" />
+    <Compile Include="Drawing\D2\CircleD.cs" />
+    <Compile Include="Drawing\D2\CircleI.cs" />
+    <Compile Include="Drawing\D2\EllipseD.cs" />
+    <Compile Include="Drawing\D2\EllipseI.cs" />
+    <Compile Include="Drawing\D2\LineD.cs" />
+    <Compile Include="Drawing\D2\LineI.cs" />
+    <Compile Include="Drawing\D2\PointD.cs" />
+    <Compile Include="Drawing\D2\PointI.cs" />
+    <Compile Include="Drawing\D2\PolygonD.cs" />
+    <Compile Include="Drawing\D2\PolygonI.cs" />
+    <Compile Include="Drawing\D2\PolylineD.cs" />
+    <Compile Include="Drawing\D2\PolylineI.cs" />
+    <Compile Include="Drawing\D2\RectangleD.cs" />
+    <Compile Include="Drawing\D2\RectangleI.cs" />
+    <Compile Include="Drawing\D2\SizeD.cs" />
+    <Compile Include="Drawing\D2\SizeI.cs" />
+    <Compile Include="Drawing\ImageFormatExtensions.cs" />
+    <Compile Include="Drawing\Picture.cs" />
+    <Compile Include="Drawing\PictureFormat.cs" />
+    <Compile Include="HexadecimalString.cs" />
+    <Compile Include="Interops\InteropsManager.cs" />
+    <Compile Include="Interops\LibFunction.cs" />
+    <Compile Include="Interops\LibFunctionAttribute.cs" />
+    <Compile Include="Interops\Structure\RECT.cs" />
+    <Compile Include="Interops\Structure\SYSTEMTIME.cs" />
+    <Compile Include="Interops\Win32Interop.cs" />
+    <Compile Include="IO\BitFormatElementAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IO\BitReader.cs" />
+    <Compile Include="IO\BitStream.cs" />
+    <Compile Include="IO\BitWriter.cs" />
+    <Compile Include="IO\ByteOrder.cs" />
+    <Compile Include="IO\CloseableStreamReader.cs" />
+    <Compile Include="IO\CloseableStreamWriter.cs" />
+    <Compile Include="IO\DataSizeExceededException.cs" />
+    <Compile Include="IO\FIFOBuffer.cs" />
+    <Compile Include="System.IO\PathExtensions.cs" />
+    <Compile Include="IO\Serialization\BinarySerializer.cs" />
+    <Compile Include="IO\Serialization\BitSerializer.cs" />
+    <Compile Include="IO\Serialization\IBinarySerializable.cs" />
+    <Compile Include="IO\Serialization\IBitSerializable.cs" />
+    <Compile Include="Media\AudioFormatExtensible.cs" />
+    <Compile Include="Media\SoundPlayer.cs" />
+    <Compile Include="Media\VideoFormatExtensible.cs" />
+    <Compile Include="Media\WaveFormatExtensible.cs" />
+    <Compile Include="Net\FtpClient.cs" />
+    <Compile Include="Net\NATType.cs" />
+    <Compile Include="Net\NetworkOperator.cs" />
+    <Compile Include="Net\NetworkType.cs" />
+    <Compile Include="Net\NotificationMethods.cs" />
+    <Compile Include="Net\SocketProtocolType.cs" />
+    <Compile Include="Net\UriConnectionStringAttribute.cs" />
+    <Compile Include="Net\UriConnectionStringBuilder.cs" />
+    <Compile Include="Net\UserAgentOSType.cs" />
+    <Compile Include="Net\UserAgentType.cs" />
+    <Compile Include="Numeric\Intervals.cs" />
+    <Compile Include="OS\TimeZone.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RangeInt32.cs" />
+    <Compile Include="Security\Activation.cs" />
+    <Compile Include="Security\IExpiration.cs" />
+    <Compile Include="Security\Session.cs" />
+    <Compile Include="System.Linq\EnumerableExtensions.cs" />
+    <Compile Include="System.Net.NetworkInformation\MultiPing.cs" />
+    <Compile Include="System.Net.NetworkInformation\PingExtensions.cs" />
+    <Compile Include="System.Net\IPAddressExtensions.cs" />
+    <Compile Include="System.Reflection\AssemblyExtensions.cs" />
+    <Compile Include="System.Reflection\PropertyInfo.cs" />
+    <Compile Include="Schedules\DayOfWeekWorkSheet.cs" />
+    <Compile Include="Schedules\DayOfWeekWorkSheetItem.cs" />
+    <Compile Include="Schedules\WeeklyWorkSheet.cs" />
+    <Compile Include="Schedules\WorkSheet.cs" />
+    <Compile Include="Schedules\Plan.cs" />
+    <Compile Include="Schedules\PlanPeriod.cs" />
+    <Compile Include="Schedules\PlanTime.cs" />
+    <Compile Include="Schedules\PlanType.cs" />
+    <Compile Include="Schedules\Programme.cs" />
+    <Compile Include="Schedules\ProgrammeItem.cs" />
+    <Compile Include="Schedules\WorkSheetItem.cs" />
+    <Compile Include="Sex.cs" />
+    <Compile Include="SR.cs" />
+    <Compile Include="StringResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StringResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="System.Collections.Generic\IEnumerableExtensions.cs" />
+    <Compile Include="System.Net.NetworkInformation\PhysicalAddressExtensions.cs" />
+    <Compile Include="System.Runtime.Serialization.Json\JsonSerializer.cs" />
+    <Compile Include="System.ServiceModel\OperationContextExtensions.cs" />
+    <Compile Include="System.Xml.Serialization\XmlSerializer.cs" />
+    <Compile Include="System\ColorConsole.cs" />
+    <Compile Include="System\StringExtensions.cs" />
+    <Compile Include="Text\ConnectionPrivacyStringBuilder.cs" />
+    <Compile Include="Text\DynamicPasswordGenerator.cs" />
+    <Compile Include="Text\IdentifyingCodeGenerator.cs" />
+    <Compile Include="Text\NameValuePair.cs" />
+    <Compile Include="Text\ConnectionOptions.cs" />
+    <Compile Include="Text\ConnectionStringBuilder.cs" />
+    <Compile Include="Text\ConnectionStringBuilderUtil.cs" />
+    <Compile Include="Text\RegularExpressions\RegexHelper.cs" />
+    <Compile Include="Threading\InvalidWaitHandle.cs" />
+    <Compile Include="Threading\ReaderWriterLockSlimAutoController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Threading\WrappedThread.cs" />
+    <Compile Include="Threading\WrappedTimer.cs" />
+    <Compile Include="Numeric\ThresholdNumber.cs" />
+    <Compile Include="Time\DateTimeExtensions.cs" />
+    <Compile Include="Time\ISO8601Date.cs" />
+    <Compile Include="Time\ISO8601DateTime.cs" />
+    <Compile Include="Time\ISO8601DateTimeHelper.cs" />
+    <Compile Include="Time\ISO8601Time.cs" />
+    <Compile Include="Time\ISO8601TimeInterval.cs" />
+    <Compile Include="Time\ISO8601TimeIntervalHelper.cs" />
+    <Compile Include="Time\ISO8601TimeZone.cs" />
+    <Compile Include="Time\NTP64.cs" />
+    <Compile Include="Time\RemoteDateTime.cs" />
+    <Compile Include="UnixTime.cs" />
+    <Compile Include="UserPermissions.cs" />
+    <Compile Include="VersionMismatchedException.cs" />
+    <Compile Include="Xml\XmlHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StringResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Net\NetworkInformation\" />
+    <Folder Include="System.ComponentModel\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>mkdir "$(DevEnvDir)Publish\Howell"
+copy "$(TargetDir)$(TargetFileName)" "$(DevEnvDir)Publish\Howell"
+copy "$(TargetDir)$(TargetName).xml" "$(DevEnvDir)Publish\Howell"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

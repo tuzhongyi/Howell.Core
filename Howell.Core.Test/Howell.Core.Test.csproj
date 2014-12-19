@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E7C2F335-3005-412D-BF24-536C529F4E80}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Howell</RootNamespace>
+    <AssemblyName>Howell.Core.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Drawing\D2\SharpTest.cs" />
+    <Compile Include="Industry\IdentityTest.cs" />
+    <Compile Include="Media\SoundPlayerTest.cs" />
+    <Compile Include="Numeric\ThresholdNumberTest.cs" />
+    <Compile Include="Reflection\AssemblyExtensionsTest.cs" />
+    <Compile Include="Schedules\PlanTest.cs" />
+    <Compile Include="Schedules\PlanTimeTest.cs" />
+    <Compile Include="Schedules\ProgrammeTest.cs" />
+    <Compile Include="Schedules\WeeklyWorkSheetTest.cs" />
+    <Compile Include="Schedules\WorkSheetTest.cs" />
+    <Compile Include="StringTest.cs" />
+    <Compile Include="ComponentModel\AsyncFunctionTest.cs" />
+    <Compile Include="Conditions\ConditionTest.cs" />
+    <Compile Include="Cryptography\MD5Test.cs" />
+    <Compile Include="IO\BitRWTest.cs" />
+    <Compile Include="IO\Serialization\BitStreamTest.cs" />
+    <Compile Include="Net\FtpClientTest.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System.Linq\EnumerableExtensionsTest.cs" />
+    <Compile Include="System.Net.NetworkInformation\PhyscialAddressTest.cs" />
+    <Compile Include="System.Net.NetworkInformation\PingTest.cs" />
+    <Compile Include="System.Runtime.Serialization.Json\JsonSerializerTest.cs" />
+    <Compile Include="System.Xml.Serialization\XmlSerializerTest.cs" />
+    <Compile Include="Text\ConnectionStringBuilderTest.cs" />
+    <Compile Include="Text\RegularExpressions\RegexHelperTest.cs" />
+    <Compile Include="Time\DateTimeExtensionsTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Howell.Core\Howell.Core.csproj">
+      <Project>{F47C7337-0629-4EBF-89DB-C68BD5D23805}</Project>
+      <Name>Howell.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

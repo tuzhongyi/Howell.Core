@@ -1,0 +1,21 @@
+C:\Documents and Settings\spyder\桌面\Howell\Howell.Core\Howell.Core.Test\bin\Release\Howell.Core.Test.exe.config
+C:\Documents and Settings\spyder\桌面\Howell\Howell.Core\Howell.Core.Test\obj\x86\Release\Howell.Core.Test.exe
+C:\Documents and Settings\spyder\桌面\Howell\Howell.Core\Howell.Core.Test\obj\x86\Release\Howell.Core.Test.pdb
+C:\Work\Howell\Howell.Core\Howell.Core.Test\bin\Release\Howell.Core.Test.exe.config
+C:\Work\Howell\Howell.Core\Howell.Core.Test\obj\x86\Release\Howell.Core.Test.exe
+C:\Work\Howell\Howell.Core\Howell.Core.Test\obj\x86\Release\Howell.Core.Test.pdb
+C:\Work\Howell\Howell.Core\Howell.Core.Test\bin\Release\Howell.Core.Test.exe
+C:\Work\Howell\Howell.Core\Howell.Core.Test\bin\Release\Howell.Core.Test.pdb
+C:\Work\Howell\Howell.Core\Howell.Core.Test\bin\Release\Howell.Core.dll
+C:\Work\Howell\Howell.Core\Howell.Core.Test\bin\Release\Howell.Core.pdb
+C:\Work\Howell\Howell.Core\Howell.Core.Test\bin\Release\Howell.Core.xml
+C:\Work\Howell\Howell.Core\Howell.Core.Test\obj\x86\Release\Howell.Core.Test.csprojResolveAssemblyReference.cache
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core.Test\bin\Release\Howell.Core.Test.exe.config
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core.Test\bin\Release\Howell.Core.Test.exe
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core.Test\bin\Release\Howell.Core.Test.pdb
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core.Test\bin\Release\Howell.Core.dll
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core.Test\bin\Release\Howell.Core.pdb
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core.Test\bin\Release\Howell.Core.xml
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core.Test\obj\x86\Release\Howell.Core.Test.csprojResolveAssemblyReference.cache
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core.Test\obj\x86\Release\Howell.Core.Test.exe
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core.Test\obj\x86\Release\Howell.Core.Test.pdb

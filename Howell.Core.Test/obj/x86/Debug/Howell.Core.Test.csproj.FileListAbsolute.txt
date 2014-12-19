@@ -1,0 +1,9 @@
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core.Test\bin\Debug\Howell.Core.Test.exe.config
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core.Test\bin\Debug\Howell.Core.Test.exe
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core.Test\bin\Debug\Howell.Core.Test.pdb
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core.Test\bin\Debug\Howell.Core.dll
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core.Test\bin\Debug\Howell.Core.xml
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core.Test\obj\x86\Debug\Howell.Core.Test.csprojResolveAssemblyReference.cache
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core.Test\obj\x86\Debug\Howell.Core.Test.exe
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core.Test\obj\x86\Debug\Howell.Core.Test.pdb
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core.Test\bin\Debug\Howell.Core.pdb

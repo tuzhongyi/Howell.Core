@@ -1,0 +1,10 @@
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core\bin\Debug\Howell.Core.dll
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core\bin\Debug\Howell.Core.pdb
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core\bin\Debug\Howell.Core.XML
+E:\Code\DotNET\Howell\Publish\Howell.Core.XML
+E:\Code\DotNET\Howell\Publish\Howell.Core.dll
+E:\Code\DotNET\Howell\Publish\Howell.Core.pdb
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core\obj\Debug\Howell.StringResource.resources
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core\obj\Debug\Howell.Core.csproj.GenerateResource.Cache
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core\obj\Debug\Howell.Core.dll
+E:\Code\DotNET\Howell\Howell.Core\Howell.Core\obj\Debug\Howell.Core.pdb
